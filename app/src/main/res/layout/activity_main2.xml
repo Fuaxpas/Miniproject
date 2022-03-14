@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBE9E9"
+    tools:context=".MainActivity2">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:layout_editor_absoluteX="1dp"
+      tools:layout_editor_absoluteY="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:textColor="#000000"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+      <ImageView
+          android:id="@+id/imageView3"
+          android:layout_width="match_parent"
+          android:layout_height="300dp" />
+
+      <TextView
+          android:id="@+id/textView6"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="start"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:text="วิธีการออก"
+          android:textColor="#000000"
+          android:textSize="20sp" />
+
+      <TextView
+          android:id="@+id/textView5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="start"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:textColor="#000000"
+          android:textSize="20sp" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mButtonStartPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="จับเวลา" />
+
+        <Button
+            android:id="@+id/mButtonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="รีเซ็ต" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/time1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="00"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=":"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/time2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="00" />
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
